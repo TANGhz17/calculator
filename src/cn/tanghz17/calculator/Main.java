@@ -5,10 +5,13 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-		JFrame jFrame=new JFrame("TANGhz17计算器");    //创建Frame窗口
-		JPanel jPanel=new JPanel();    //创建面板
+    	//创建Frame窗口
+		JFrame jFrame=new JFrame("TANGhz17计算器");
+		// 创建面板
+		JPanel jPanel=new JPanel();
+		// 创建按钮
 		JButton btn0=new JButton("0");
-		JButton btn1=new JButton("1");    //创建按钮
+		JButton btn1=new JButton("1");
 		JButton btn2=new JButton("2");
 		JButton btn3=new JButton("3");
 		JButton btn4=new JButton("4");
@@ -17,8 +20,9 @@ public class Main {
 		JButton btn7=new JButton("7");
 		JButton btn8=new JButton("8");
 		JButton btn9=new JButton("9");
+		//面板中添加按钮
 		jPanel.add(btn7);
-		jPanel.add(btn8);    //面板中添加按钮
+		jPanel.add(btn8);
 		jPanel.add(btn9);
 		jPanel.add(btn4);
 		jPanel.add(btn5);
@@ -27,7 +31,7 @@ public class Main {
 		jPanel.add(btn2);
 		jPanel.add(btn3);
 		jPanel.add(btn0);
-		//向JPanel添加FlowLayout布局管理器，将组件间的横向和纵向间隙都设置为20像素
+		//指定面板的布局为GridLayout，4行4列，间隙为5
 		jPanel.setLayout(new GridLayout(4,4,5,5));
 		jPanel.setBackground(Color.gray);    //设置背景色
 		jFrame.add(jPanel);    //添加面板到容器
